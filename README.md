@@ -1,21 +1,28 @@
-🎲 #Synthetic Dataset Generator
+🎲 SYNTHETIC DATASET GENERATOR
 
 A constraint-aware synthetic dataset generator powered by Meta Llama 3.1 (8B Instruct), optimized using 4-bit quantization, and deployed with an interactive Gradio UI on Google Colab (T4 GPU).
 
 This tool allows users to generate structured, row-wise JSON datasets by simply describing columns and constraints in natural language.
 
-#✨ Features
+✨KEY FEATURES
 
-✅ Generates row-oriented JSON (production-ready)
+✅ Strict Row-wise JSON Output
+Always returns data as an array of objects (never columnar).
 
-✅ Enforces strict schema adherence
+✅ Schema & Constraint Enforcement
+Enforces column names, value ranges, formats, and categories.
 
-✅ Supports custom constraints (ranges, formats, categories)
+✅ Logical Attribute Correlation
+Ensures realistic relationships (e.g., age aligns with occupation).
 
-✅ Logical correlation between attributes (e.g., age ↔ occupation)
+✅ Natural Language Dataset Specification
+Define datasets using simple text instructions.
 
-✅ No columnar JSON output (explicitly prevented)
+✅ 4-bit Quantized Inference (NF4)
+Efficient GPU usage with minimal VRAM footprint.
 
-✅ Lightweight inference via 4-bit NF4 quantization
+✅ Interactive Gradio Web Interface
+Generate, preview, and validate datasets in real time.
 
-✅ Interactive Gradio-based UI
+✅ Production-Ready Output
+Clean JSON suitable for ML pipelines, APIs, and testing.
